@@ -139,7 +139,7 @@ def callback(event):
 					b = 1
 					break
 
-		#diag left,up
+		#diag left, up
 		if board[r-1][c-1] == (player+1)%2 and board[r-2][c-2] != 9:
 			tmp = 0
 			if c <= r:
@@ -156,7 +156,7 @@ def callback(event):
 					b = 1
 					break
 
-		#diag right, down
+		#diag right, up
 		if board[r-1][c+1] == (player+1)%2 and board[r-2][c+2] != 9:
 			tmp = 0
 			if size-c <= r:
